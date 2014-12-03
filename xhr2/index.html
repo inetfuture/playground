@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+    var xhr1 = new XMLHttpRequest();
+    xhr1.open('GET', 'gravatar.jpeg', true);
+    xhr1.responseType = 'blob';
+
+    xhr1.onload = function (e) {
+      if (this.status == 200) {
+        var blob = new Blob([this.response], {type: 'image/jpeg'});
+        console.log(blob);
+
+        var img = document.createElement('img');
+        img.onload = function(e) {
+          window.URL.revokeObjectURL(img.src); // Clean up after yourself.
+        };
+        img.src = window.URL.createObjectURL(blob);
+        document.body.appendChild(img);
+      }
+    };
+
+    xhr1.send();
+
+    var xhr2 = new XMLHttpRequest();
+    xhr2.open('GET', 'gravatar.jpeg', true);
+    xhr2.responseType = 'arraybuffer';
+
+    xhr2.onload = function (e) {
+      var uInt8Array = new Uint8Array(this.response); // this.response == uInt8Array.buffer
+      console.log(uInt8Array);
+    };
+
+    xhr2.send();
+  </script>
+</body>
+</html>
