@@ -12,7 +12,7 @@ passport.deserializeUser(function(obj, callback) {
 
 passport.use(new passport_sina(require('./secrets'),
     function(accessToken, refreshToken, profile, callback) {
-        console.log(accessToken, refreshToken, profile);
+        console.log('auth success, accessToken:', accessToken, 'refreshToken:', refreshToken, 'profile:', profile);
         process.nextTick(function () {
             return callback(null, profile);
         });
@@ -48,14 +48,27 @@ app.get('/logout', function(req, res) {
 app.get('/auth/sina', passport.authenticate('sina'));
 // Verify Auth
 app.get('/auth/sina/callback', function (req, res, next) {
-    console.log('callback', req.query);
+    console.log('callback, query:', req.query);
     next();
 });
-app.get('/auth/sina/callback', passport.authenticate('sina', { failureRedirect: '/aaa', successRedirect: '/auth/sina/success' }));
+app.get('/auth/sina/callback', passport.authenticate('sina', {
+    successRedirect: '/auth/sina/success',
+    failureRedirect: '/auth/sina/fail'
+}));
 
 app.get('/auth/sina/success', function (req, res, next) {
-    console.log(req.query, req.user);
-    res.end();
+    console.log('success, query:', req.query, 'user:', req.user);
+    res.send('<p>success</p><a href="/">home</a><p>' + JSON.stringify(req.user) + '</p>');
+});
+
+app.get('/auth/sina/fail', function (req, res, next) {
+    console.log('fail, query:', req.query);
+    res.send('<p>fail</p><a href="/">home</a>');
+});
+
+app.get('/fanservice/verify', function (req, res, next) {
+    console.log('fanservice verify, query:', req.query);
+    res.send(req.query.echostr);
 });
 
 var server = app.listen(parseInt(process.env.NODE_PORT, 10) || 3000, function() {
