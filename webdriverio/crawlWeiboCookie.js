@@ -1,6 +1,6 @@
 var webdriverio = require('webdriverio');
 
-var secret = require('./secret');
+var secrets = require('./secrets');
 
 var options = {
     desiredCapabilities: {
@@ -14,8 +14,8 @@ client
 .init()
 .url('http://weibo.com/login')
 .waitForEnabled('[node-type="username"]', 30 * 1000)
-.setValue('[node-type="username"]', secret.username)
-.setValue('[node-type="password"]', secret.password)
+.setValue('[node-type="username"]', secrets.username)
+.setValue('[node-type="password"]', secrets.password)
 .waitForVisible('.W_login_form [node-type="submitBtn"]', 30 * 1000)
 .click('.W_login_form [node-type="submitBtn"]')
 .waitFor('.tab_wrap', 30 * 1000)
