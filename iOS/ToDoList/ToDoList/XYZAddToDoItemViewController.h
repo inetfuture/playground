@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "XYZToDoItem.h"
 
-@interface XYZAddToDoItemViewController : UIViewController
+@interface XYZAddToDoItemViewController : UIViewController <UITextFieldDelegate>
 @property XYZToDoItem *toDoItem;
 @end
