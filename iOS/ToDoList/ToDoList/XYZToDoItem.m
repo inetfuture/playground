@@ -14,17 +14,17 @@
 
 @implementation XYZToDoItem
 
-- (void)makrAsCompleted:(BOOL)isCompleted {
-    self.completed = isCompleted;
-    [self setCompletionDate];
-}
-
 - (void)setCompletionDate {
     if (self.completed) {
         self.completionDate = [NSDate date];
     } else {
         self.completionDate = nil;
     }
+}
+
+- (void)markAsCompleted:(BOOL)isCompleted {
+    self.completed = isCompleted;
+    [self setCompletionDate];
 }
 
 @end
