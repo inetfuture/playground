@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:iOS/EventEmitter/EventEmitter.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:iOS/Syntax/Syntax.xcodeproj">
    </FileRef>
    <FileRef
