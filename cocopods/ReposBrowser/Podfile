@@ -1,0 +1,10 @@
+target 'ReposBrowser' do
+
+pod 'NetworkLib', :path => '../NetworkLib'
+
+end
+
+target 'ReposBrowserTests' do
+
+end
+

@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F8D03BEE7CC2212F883F830 /* libPods-ReposBrowserStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 486A97DDAE9A14C2154D16BE /* libPods-ReposBrowserStatic.a */; };
+		930D41D31B855A6500053AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 930D41D21B855A6500053AC5 /* main.m */; };
+		930D41D61B855A6500053AC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 930D41D51B855A6500053AC5 /* AppDelegate.m */; };
+		930D41DE1B855A6500053AC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930D41DD1B855A6500053AC5 /* Images.xcassets */; };
+		930D41E11B855A6500053AC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 930D41DF1B855A6500053AC5 /* LaunchScreen.xib */; };
+		930D41ED1B855A6500053AC5 /* ReposBrowserStaticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 930D41EC1B855A6500053AC5 /* ReposBrowserStaticTests.m */; };
+		930D41F81B855ABB00053AC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930D41F71B855ABB00053AC5 /* ViewController.m */; };
+		930D41FA1B855AD200053AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930D41F91B855AD200053AC5 /* Main.storyboard */; };
+		930D42001B855B6600053AC5 /* NetworkLib.plist in Resources */ = {isa = PBXBuildFile; fileRef = 930D41FE1B855B6600053AC5 /* NetworkLib.plist */; };
+		930D42061B855EE500053AC5 /* libNetworkLib-debug-0.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930D42041B855EE500053AC5 /* libNetworkLib-debug-0.0.1.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		930D41E71B855A6500053AC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930D41C51B855A6500053AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930D41CC1B855A6500053AC5;
+			remoteInfo = ReposBrowserStatic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		486A97DDAE9A14C2154D16BE /* libPods-ReposBrowserStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReposBrowserStatic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		930D41CD1B855A6500053AC5 /* ReposBrowserStatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReposBrowserStatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		930D41D11B855A6500053AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930D41D21B855A6500053AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		930D41D41B855A6500053AC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		930D41D51B855A6500053AC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		930D41DD1B855A6500053AC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		930D41E01B855A6500053AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		930D41E61B855A6500053AC5 /* ReposBrowserStaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReposBrowserStaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		930D41EB1B855A6500053AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930D41EC1B855A6500053AC5 /* ReposBrowserStaticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReposBrowserStaticTests.m; sourceTree = "<group>"; };
+		930D41F61B855ABB00053AC5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		930D41F71B855ABB00053AC5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		930D41F91B855AD200053AC5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		930D41FE1B855B6600053AC5 /* NetworkLib.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkLib.plist; sourceTree = "<group>"; };
+		930D42041B855EE500053AC5 /* libNetworkLib-debug-0.0.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libNetworkLib-debug-0.0.1.a"; sourceTree = "<group>"; };
+		930D42051B855EE500053AC5 /* NetworkLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLib.h; sourceTree = "<group>"; };
+		C6A84EAC513F41B4DFD805AA /* Pods-ReposBrowserStatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposBrowserStatic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReposBrowserStatic/Pods-ReposBrowserStatic.debug.xcconfig"; sourceTree = "<group>"; };
+		FB94AB777A44831E4885A777 /* Pods-ReposBrowserStatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReposBrowserStatic.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReposBrowserStatic/Pods-ReposBrowserStatic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		930D41CA1B855A6500053AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930D42061B855EE500053AC5 /* libNetworkLib-debug-0.0.1.a in Frameworks */,
+				1F8D03BEE7CC2212F883F830 /* libPods-ReposBrowserStatic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930D41E31B855A6500053AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		930D41C41B855A6500053AC5 = {
+			isa = PBXGroup;
+			children = (
+				930D41CF1B855A6500053AC5 /* ReposBrowserStatic */,
+				930D41E91B855A6500053AC5 /* ReposBrowserStaticTests */,
+				930D41CE1B855A6500053AC5 /* Products */,
+				DF33A907E9ED9A190EFF018F /* Pods */,
+				96DB072483AEBC2E56A2A5B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		930D41CE1B855A6500053AC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				930D41CD1B855A6500053AC5 /* ReposBrowserStatic.app */,
+				930D41E61B855A6500053AC5 /* ReposBrowserStaticTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		930D41CF1B855A6500053AC5 /* ReposBrowserStatic */ = {
+			isa = PBXGroup;
+			children = (
+				930D41FB1B855B6600053AC5 /* NetworkLib */,
+				930D41F91B855AD200053AC5 /* Main.storyboard */,
+				930D41F61B855ABB00053AC5 /* ViewController.h */,
+				930D41F71B855ABB00053AC5 /* ViewController.m */,
+				930D41D41B855A6500053AC5 /* AppDelegate.h */,
+				930D41D51B855A6500053AC5 /* AppDelegate.m */,
+				930D41DD1B855A6500053AC5 /* Images.xcassets */,
+				930D41DF1B855A6500053AC5 /* LaunchScreen.xib */,
+				930D41D01B855A6500053AC5 /* Supporting Files */,
+			);
+			path = ReposBrowserStatic;
+			sourceTree = "<group>";
+		};
+		930D41D01B855A6500053AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				930D41D11B855A6500053AC5 /* Info.plist */,
+				930D41D21B855A6500053AC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		930D41E91B855A6500053AC5 /* ReposBrowserStaticTests */ = {
+			isa = PBXGroup;
+			children = (
+				930D41EC1B855A6500053AC5 /* ReposBrowserStaticTests.m */,
+				930D41EA1B855A6500053AC5 /* Supporting Files */,
+			);
+			path = ReposBrowserStaticTests;
+			sourceTree = "<group>";
+		};
+		930D41EA1B855A6500053AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				930D41EB1B855A6500053AC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		930D41FB1B855B6600053AC5 /* NetworkLib */ = {
+			isa = PBXGroup;
+			children = (
+				930D42041B855EE500053AC5 /* libNetworkLib-debug-0.0.1.a */,
+				930D42051B855EE500053AC5 /* NetworkLib.h */,
+				930D41FE1B855B6600053AC5 /* NetworkLib.plist */,
+			);
+			path = NetworkLib;
+			sourceTree = "<group>";
+		};
+		96DB072483AEBC2E56A2A5B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				486A97DDAE9A14C2154D16BE /* libPods-ReposBrowserStatic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF33A907E9ED9A190EFF018F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6A84EAC513F41B4DFD805AA /* Pods-ReposBrowserStatic.debug.xcconfig */,
+				FB94AB777A44831E4885A777 /* Pods-ReposBrowserStatic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		930D41CC1B855A6500053AC5 /* ReposBrowserStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930D41F01B855A6500053AC5 /* Build configuration list for PBXNativeTarget "ReposBrowserStatic" */;
+			buildPhases = (
+				54C1ED5C795497E2E2A50015 /* Check Pods Manifest.lock */,
+				930D41C91B855A6500053AC5 /* Sources */,
+				930D41CA1B855A6500053AC5 /* Frameworks */,
+				930D41CB1B855A6500053AC5 /* Resources */,
+				9CDA0957D1386AD2F1DAABB7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReposBrowserStatic;
+			productName = ReposBrowserStatic;
+			productReference = 930D41CD1B855A6500053AC5 /* ReposBrowserStatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		930D41E51B855A6500053AC5 /* ReposBrowserStaticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930D41F31B855A6500053AC5 /* Build configuration list for PBXNativeTarget "ReposBrowserStaticTests" */;
+			buildPhases = (
+				930D41E21B855A6500053AC5 /* Sources */,
+				930D41E31B855A6500053AC5 /* Frameworks */,
+				930D41E41B855A6500053AC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930D41E81B855A6500053AC5 /* PBXTargetDependency */,
+			);
+			name = ReposBrowserStaticTests;
+			productName = ReposBrowserStaticTests;
+			productReference = 930D41E61B855A6500053AC5 /* ReposBrowserStaticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		930D41C51B855A6500053AC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = inetfuture;
+				TargetAttributes = {
+					930D41CC1B855A6500053AC5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					930D41E51B855A6500053AC5 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 930D41CC1B855A6500053AC5;
+					};
+				};
+			};
+			buildConfigurationList = 930D41C81B855A6500053AC5 /* Build configuration list for PBXProject "ReposBrowserStatic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 930D41C41B855A6500053AC5;
+			productRefGroup = 930D41CE1B855A6500053AC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				930D41CC1B855A6500053AC5 /* ReposBrowserStatic */,
+				930D41E51B855A6500053AC5 /* ReposBrowserStaticTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		930D41CB1B855A6500053AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930D41FA1B855AD200053AC5 /* Main.storyboard in Resources */,
+				930D41E11B855A6500053AC5 /* LaunchScreen.xib in Resources */,
+				930D41DE1B855A6500053AC5 /* Images.xcassets in Resources */,
+				930D42001B855B6600053AC5 /* NetworkLib.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930D41E41B855A6500053AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54C1ED5C795497E2E2A50015 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CDA0957D1386AD2F1DAABB7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReposBrowserStatic/Pods-ReposBrowserStatic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		930D41C91B855A6500053AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930D41F81B855ABB00053AC5 /* ViewController.m in Sources */,
+				930D41D61B855A6500053AC5 /* AppDelegate.m in Sources */,
+				930D41D31B855A6500053AC5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930D41E21B855A6500053AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930D41ED1B855A6500053AC5 /* ReposBrowserStaticTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		930D41E81B855A6500053AC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930D41CC1B855A6500053AC5 /* ReposBrowserStatic */;
+			targetProxy = 930D41E71B855A6500053AC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		930D41DF1B855A6500053AC5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930D41E01B855A6500053AC5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		930D41EE1B855A6500053AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		930D41EF1B855A6500053AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		930D41F11B855A6500053AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A84EAC513F41B4DFD805AA /* Pods-ReposBrowserStatic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReposBrowserStatic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReposBrowserStatic/NetworkLib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		930D41F21B855A6500053AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB94AB777A44831E4885A777 /* Pods-ReposBrowserStatic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReposBrowserStatic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReposBrowserStatic/NetworkLib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		930D41F41B855A6500053AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReposBrowserStaticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReposBrowserStatic.app/ReposBrowserStatic";
+			};
+			name = Debug;
+		};
+		930D41F51B855A6500053AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReposBrowserStaticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReposBrowserStatic.app/ReposBrowserStatic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		930D41C81B855A6500053AC5 /* Build configuration list for PBXProject "ReposBrowserStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930D41EE1B855A6500053AC5 /* Debug */,
+				930D41EF1B855A6500053AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930D41F01B855A6500053AC5 /* Build configuration list for PBXNativeTarget "ReposBrowserStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930D41F11B855A6500053AC5 /* Debug */,
+				930D41F21B855A6500053AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930D41F31B855A6500053AC5 /* Build configuration list for PBXNativeTarget "ReposBrowserStaticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930D41F41B855A6500053AC5 /* Debug */,
+				930D41F51B855A6500053AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 930D41C51B855A6500053AC5 /* Project object */;
+}

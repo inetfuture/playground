@@ -1,0 +1,12 @@
+platform :ios, '7.0'
+
+target 'ReposBrowserStatic' do
+
+pod 'AFNetworking'
+
+end
+
+target 'ReposBrowserStaticTests' do
+
+end
+
