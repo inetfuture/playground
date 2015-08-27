@@ -1,0 +1,21 @@
+PODS:
+  - dyci (0.1.5.6):
+    - dyci/Injections (= 0.1.5.6)
+  - dyci/Injections (0.1.5.6)
+  - KZPlayground (0.3.3):
+    - dyci (~> 0.1.5.6)
+    - NHBalancedFlowLayout (~> 0.2)
+    - RSSwizzle (~> 0.1.0)
+  - NHBalancedFlowLayout (0.2)
+  - RSSwizzle (0.1.0)
+
+DEPENDENCIES:
+  - KZPlayground
+
+SPEC CHECKSUMS:
+  dyci: 099c2e6dc98abb8f21b370cabbf1443ff700608a
+  KZPlayground: 079127ffc487adb682d3407f68cc63e92927de97
+  NHBalancedFlowLayout: fd253023c6754e605acdb180d50123e582cc62bb
+  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+
+COCOAPODS: 0.38.2

@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		258E0F8A4A47A1A50B350961 /* libPods-ios-kzplayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BEF57AEB80AA058752EDCD /* libPods-ios-kzplayground.a */; };
+		93C910511B8EDDAB00478C57 /* IKFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C910501B8EDDAB00478C57 /* IKFoundation.m */; };
+		93E2FD191B8EDAE50097059B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E2FD181B8EDAE50097059B /* main.m */; };
+		93E2FD1C1B8EDAE50097059B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E2FD1B1B8EDAE50097059B /* AppDelegate.m */; };
+		93E2FD241B8EDAE50097059B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E2FD231B8EDAE50097059B /* Images.xcassets */; };
+		93E2FD271B8EDAE50097059B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E2FD251B8EDAE50097059B /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD3B24BB81AAE14F563A73B /* Pods-ios-kzplayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-kzplayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-kzplayground/Pods-ios-kzplayground.release.xcconfig"; sourceTree = "<group>"; };
+		56F58F8EEF4FA83B3E5FCC37 /* Pods-ios-kzplayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-kzplayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-kzplayground/Pods-ios-kzplayground.debug.xcconfig"; sourceTree = "<group>"; };
+		62BEF57AEB80AA058752EDCD /* libPods-ios-kzplayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-kzplayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C9104F1B8EDDAB00478C57 /* IKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKFoundation.h; sourceTree = "<group>"; };
+		93C910501B8EDDAB00478C57 /* IKFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKFoundation.m; sourceTree = "<group>"; };
+		93E2FD131B8EDAE50097059B /* ios-kzplayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-kzplayground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E2FD171B8EDAE50097059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E2FD181B8EDAE50097059B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93E2FD1A1B8EDAE50097059B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93E2FD1B1B8EDAE50097059B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93E2FD231B8EDAE50097059B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93E2FD261B8EDAE50097059B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93E2FD101B8EDAE50097059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258E0F8A4A47A1A50B350961 /* libPods-ios-kzplayground.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9233247C2D3A3A3640DDC532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56F58F8EEF4FA83B3E5FCC37 /* Pods-ios-kzplayground.debug.xcconfig */,
+				1DD3B24BB81AAE14F563A73B /* Pods-ios-kzplayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93E2FD0A1B8EDAE50097059B = {
+			isa = PBXGroup;
+			children = (
+				93E2FD151B8EDAE50097059B /* ios-kzplayground */,
+				93E2FD141B8EDAE50097059B /* Products */,
+				9233247C2D3A3A3640DDC532 /* Pods */,
+				C78A0448C58CF1BCB86DDCAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93E2FD141B8EDAE50097059B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93E2FD131B8EDAE50097059B /* ios-kzplayground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93E2FD151B8EDAE50097059B /* ios-kzplayground */ = {
+			isa = PBXGroup;
+			children = (
+				93E2FD1A1B8EDAE50097059B /* AppDelegate.h */,
+				93E2FD1B1B8EDAE50097059B /* AppDelegate.m */,
+				93E2FD231B8EDAE50097059B /* Images.xcassets */,
+				93E2FD251B8EDAE50097059B /* LaunchScreen.xib */,
+				93E2FD161B8EDAE50097059B /* Supporting Files */,
+				93C9104F1B8EDDAB00478C57 /* IKFoundation.h */,
+				93C910501B8EDDAB00478C57 /* IKFoundation.m */,
+			);
+			path = "ios-kzplayground";
+			sourceTree = "<group>";
+		};
+		93E2FD161B8EDAE50097059B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93E2FD171B8EDAE50097059B /* Info.plist */,
+				93E2FD181B8EDAE50097059B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C78A0448C58CF1BCB86DDCAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62BEF57AEB80AA058752EDCD /* libPods-ios-kzplayground.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93E2FD121B8EDAE50097059B /* ios-kzplayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E2FD361B8EDAE50097059B /* Build configuration list for PBXNativeTarget "ios-kzplayground" */;
+			buildPhases = (
+				2C2CA5A6E5330DAEE5942128 /* Check Pods Manifest.lock */,
+				93E2FD0F1B8EDAE50097059B /* Sources */,
+				93E2FD101B8EDAE50097059B /* Frameworks */,
+				93E2FD111B8EDAE50097059B /* Resources */,
+				B476E587AE30CDF68F7C54BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-kzplayground";
+			productName = "ios-kzplayground";
+			productReference = 93E2FD131B8EDAE50097059B /* ios-kzplayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93E2FD0B1B8EDAE50097059B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = inetfuture;
+				TargetAttributes = {
+					93E2FD121B8EDAE50097059B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 93E2FD0E1B8EDAE50097059B /* Build configuration list for PBXProject "ios-kzplayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93E2FD0A1B8EDAE50097059B;
+			productRefGroup = 93E2FD141B8EDAE50097059B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93E2FD121B8EDAE50097059B /* ios-kzplayground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93E2FD111B8EDAE50097059B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E2FD271B8EDAE50097059B /* LaunchScreen.xib in Resources */,
+				93E2FD241B8EDAE50097059B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C2CA5A6E5330DAEE5942128 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B476E587AE30CDF68F7C54BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-kzplayground/Pods-ios-kzplayground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93E2FD0F1B8EDAE50097059B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C910511B8EDDAB00478C57 /* IKFoundation.m in Sources */,
+				93E2FD1C1B8EDAE50097059B /* AppDelegate.m in Sources */,
+				93E2FD191B8EDAE50097059B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93E2FD251B8EDAE50097059B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E2FD261B8EDAE50097059B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93E2FD341B8EDAE50097059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93E2FD351B8EDAE50097059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93E2FD371B8EDAE50097059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F58F8EEF4FA83B3E5FCC37 /* Pods-ios-kzplayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "ios-kzplayground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		93E2FD381B8EDAE50097059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD3B24BB81AAE14F563A73B /* Pods-ios-kzplayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "ios-kzplayground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93E2FD0E1B8EDAE50097059B /* Build configuration list for PBXProject "ios-kzplayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E2FD341B8EDAE50097059B /* Debug */,
+				93E2FD351B8EDAE50097059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E2FD361B8EDAE50097059B /* Build configuration list for PBXNativeTarget "ios-kzplayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E2FD371B8EDAE50097059B /* Debug */,
+				93E2FD381B8EDAE50097059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93E2FD0B1B8EDAE50097059B /* Project object */;
+}
