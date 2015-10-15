@@ -20,13 +20,21 @@
     textView.textContainer.lineBreakMode = NSLineBreakByCharWrapping;
     [self.worksheetView addSubview:textView];
 
-    @try {
-        id toSerialize = nil;
-        toSerialize = @{ @"a" : textView };
-        [NSJSONSerialization dataWithJSONObject:toSerialize options:0 error:nil];
-    } @catch (NSException *exception) {
-        textView.text = [exception description];
-    }
+    //    @try {
+    //        id toSerialize = nil;
+    //        toSerialize = @{ @"a" : textView };
+    //        [NSJSONSerialization dataWithJSONObject:toSerialize options:0 error:nil];
+    //    } @catch (NSException *exception) {
+    //        textView.text = [exception description];
+    //    }
+
+    //    NSDate *lastRecordTime = nil;
+    //    NSTimeInterval lastRecordTimeTemp = lastRecordTime.timeIntervalSinceNow;
+    //    textView.text = [NSString stringWithFormat:@"%@", @(lastRecordTimeTemp)];
+
+    NSMutableArray *array = [NSMutableArray new];
+    [array addObject:nil];
+    KZPShow(@"%@", @([array containsObject:nil]));
 }
 
 @end
