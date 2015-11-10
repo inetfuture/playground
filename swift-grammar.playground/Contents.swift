@@ -17,6 +17,11 @@ if let name = optionalName {
     greeting = "World"
 }
 
+optionalName = "test"
+if optionalName != nil {
+    print("OptionalName: \(optionalName!)")
+}
+
 let vegetable = "red pepper"
 switch vegetable {
     case "celery":
@@ -200,3 +205,42 @@ func repeatItem<Item>(item: Item, numberOfTimes: Int) -> [Item] {
     return result
 }
 repeatItem("knock", numberOfTimes: 7)
+
+var word = "cafe"
+print("\(word.characters.count)")
+word += "\u{301}"
+print("\(word.characters.count), \(word.endIndex)")
+print("\(word[word.endIndex.predecessor()])")
+
+var arr = Array<Int>()
+print(arr.isEmpty, arr)
+
+var shoppingList = ["Chocolate Spread", "Cheese", "Butter"]
+shoppingList[0...1] = ["a", "b"]
+print(shoppingList)
+
+for (index, value) in shoppingList.enumerate() {
+    print(index, value)
+}
+
+class Movie {
+    var name: String
+    var director: String
+    var v: String!
+    let c = ""
+    
+    init (name: String, director: String) {
+        self.name = name
+        self.director = director
+    }
+}
+
+let someObjects: [AnyObject] = [
+    Movie(name: "2001: A Space Odyssey", director: "Stanley Kubrick"),
+    Movie(name: "Moon", director: "Duncan Jones"),
+    Movie(name: "Alien", director: "Ridley Scott")
+]
+let m = someObjects[0] as! Movie
+let o = m as Any
+
+
