@@ -6,17 +6,24 @@
 //  Copyright © 2015 inetfuture. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import <TuisongbaoRealtimeEngine/TuisongbaoRealtimeEngine.h>
+#import "AppDelegate.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic) TREEngine *engine;
 
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [TREDebug enable];
+    self.engine = [[TREEngine alloc] initWithAppID:@"ab3d5241778158b2864c0852"
+                                           options:@{
+                                               kTREEngineOptionAuthEndpoint : [@"http://www.tuisongbao.com"
+                                                   stringByAppendingString:@"/api/engineDemo/authUser"]
+                                           }];
     return YES;
 }
 

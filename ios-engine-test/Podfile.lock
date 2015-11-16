@@ -24,12 +24,10 @@ PODS:
   - Qiniu (7.0.15):
     - AFNetworking (~> 2.0)
     - HappyDNS (~> 0.2)
-  - Reveal-iOS-SDK (1.6.2)
   - TuisongbaoRealtimeEngine (2.1.1):
     - Qiniu (~> 7.0)
 
 DEPENDENCIES:
-  - Reveal-iOS-SDK
   - TuisongbaoRealtimeEngine (from `https://github.com/tuisongbao/realtime-engine-client-ios.git`)
 
 EXTERNAL SOURCES:
@@ -38,14 +36,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   TuisongbaoRealtimeEngine:
-    :commit: 21ea79aaad549f0e340a404e4f5be7e2b7392984
+    :commit: 67168e0d9ad50f0edfa158fe28a30065afc41d0e
     :git: https://github.com/tuisongbao/realtime-engine-client-ios.git
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
   Qiniu: ade34d722c8ce0eed7080fd268249e8402a2f535
-  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
-  TuisongbaoRealtimeEngine: c686df91e34b3fd1807f731eb2a3809b5e517597
+  TuisongbaoRealtimeEngine: f82e478b4f5e0e560a45b80a14b905a023728b25
 
 COCOAPODS: 0.39.0
