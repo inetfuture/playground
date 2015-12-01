@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'ios-engine-swift-test' do
+
+pod 'TuisongbaoRealtimeEngine', :path => '~/wp/tuisongbao/engine/clientIOS/src/TuisongbaoRealtimeEngine/GithubRelease'
+
+
+end

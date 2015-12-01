@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "45B5F30AFDB166D4C0BE191DE4C2EBD86CE6689B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "45B5F30AFDB166D4C0BE191DE4C2EBD86CE6689B" : 0,
+    "028C34CC3B9446AA5C53B57ED6C7D7E0B0821A76" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8952DB2C-FB5C-4EC1-9B7F-5771E0A54637",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "45B5F30AFDB166D4C0BE191DE4C2EBD86CE6689B" : "playground\/",
+    "028C34CC3B9446AA5C53B57ED6C7D7E0B0821A76" : "tuisongbao\/engine\/clientIOS\/src\/TuisongbaoRealtimeEngine\/GithubRelease\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ios-engine-swift-test",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios-engine-swift-test\/ios-engine-swift-test.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tuisongbao\/realtime-engine-client-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "028C34CC3B9446AA5C53B57ED6C7D7E0B0821A76"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/inetfuture\/playground.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B5F30AFDB166D4C0BE191DE4C2EBD86CE6689B"
+    }
+  ]
+}

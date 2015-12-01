@@ -6,8 +6,8 @@
 //  Copyright © 2015 inetfuture. All rights reserved.
 //
 
-#import <TuisongbaoRealtimeEngine/TuisongbaoRealtimeEngine.h>
 #import "AppDelegate.h"
+#import <TuisongbaoRealtimeEngine/TuisongbaoRealtimeEngine.h>
 
 @interface AppDelegate ()
 

@@ -2,7 +2,7 @@ platform :ios, '7.0'
 
 target 'ios-engine-test' do
 
-pod 'TuisongbaoRealtimeEngine', :git => 'https://github.com/tuisongbao/realtime-engine-client-ios.git'
+pod 'TuisongbaoRealtimeEngine'
 
 end
 

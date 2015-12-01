@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - HappyDNS (0.2.3)
+  - MBProgressHUD (0.9.1)
   - Qiniu (7.0.16):
     - AFNetworking (~> 2.0)
     - HappyDNS (~> 0.2)
@@ -28,12 +29,18 @@ PODS:
     - Qiniu (~> 7.0)
 
 DEPENDENCIES:
-  - TuisongbaoRealtimeEngine
+  - MBProgressHUD
+  - TuisongbaoRealtimeEngine (from `~/wp/tuisongbao/engine/clientIOS/src/TuisongbaoRealtimeEngine/GithubRelease`)
+
+EXTERNAL SOURCES:
+  TuisongbaoRealtimeEngine:
+    :path: ~/wp/tuisongbao/engine/clientIOS/src/TuisongbaoRealtimeEngine/GithubRelease
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   Qiniu: 51a8702cddc02b50867e10cef99291b9a8a006b1
-  TuisongbaoRealtimeEngine: 33cbabd05d8f5bd3a5f9ce28f28fc0a5c53e29ba
+  TuisongbaoRealtimeEngine: b06add16bdaa1eb06eee543606d8b4f133534219
 
 COCOAPODS: 0.39.0
