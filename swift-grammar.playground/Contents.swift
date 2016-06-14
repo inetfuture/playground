@@ -1,3 +1,5 @@
+import Foundation
+
 var array = ["blogs"]
 array[0] = "books"
 print(array)
@@ -243,4 +245,63 @@ let someObjects: [AnyObject] = [
 let m = someObjects[0] as! Movie
 let o = m as Any
 
+//==============================================================================
+enum CustomError: ErrorType {
+    case Error1
+    case Error2
+}
+
+func throwingMethod() throws {
+    throw CustomError.Error1
+}
+
+func callThrowingMethod() throws {
+    try throwingMethod()
+}
+
+//==============================================================================
+
+class StringUtils {
+    
+    class func isEmpty(str: String?) -> Bool {
+        if let str = str {
+            return str.isEmpty
+        } else {
+            return true
+        }
+    }
+    
+    class func notToNil(str: String?) -> String {
+        return isEmpty(str) ? "" : str!
+    }
+    
+    static let machineId3BytesStr = String(format: "%06x", Int(drand48() * 0xFFFFFF))
+    static var counter3Bytes = Int(drand48() * 0xFFFFFF)
+    static let counterIncLock = "whatever"
+    
+    class func genServerId() -> String {
+        let timestamp4Bytes = Int(NSDate().timeIntervalSince1970)
+        let timestamp4BytesStr = String(format: "%08x", timestamp4Bytes)
+
+        let processId2Bytes = NSProcessInfo.processInfo().processIdentifier % 0xFFFF;
+        let processId2BytesStr = String(format: "%04x", processId2Bytes)
+        
+        objc_sync_enter(counterIncLock)
+        counter3Bytes = (counter3Bytes + 1) % 0xFFFFFF
+        let counter3BytesStr = String(format: "%06x", counter3Bytes)
+        objc_sync_exit(counterIncLock)
+        
+        return "\(timestamp4BytesStr)\(machineId3BytesStr)\(processId2BytesStr)\(counter3BytesStr)"
+    }
+    
+}
+
+var ret1 = 0
+var ret2 = Set<String>()
+for index in 1...9999 {
+    let id = StringUtils.genServerId()
+    ret2.insert(id)
+    ret1++
+}
+print(ret, ret2.count)
 
