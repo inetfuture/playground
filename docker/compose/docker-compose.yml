@@ -1,4 +1,5 @@
 version: '2'
+
 services:
   web:
     build: .
@@ -8,7 +9,15 @@ services:
       - .:/code
     depends_on:
       - redis
+
   redis:
     image: redis
     ports:
         - '6380:6379'
+    networks:
+      - default
+      - manual_bridge
+
+networks:
+  manual_bridge:
+    external: true
