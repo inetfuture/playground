@@ -1,0 +1,4 @@
+node.master: true
+node.data: true
+network.host: 0.0.0.0
+discovery.zen.ping.unicast.hosts: ["es_node_2"]

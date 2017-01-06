@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  node1:
+    image: elasticsearch:2.4.3
+    container_name: es_node_1
+    volumes:
+      - ./node1/config:/usr/share/elasticsearch/config
+      - ./node1/data:/usr/share/elasticsearch/data
+    ports:
+      - 9201:9200
+      - 9301:9300
+
+  node2:
+    image: elasticsearch:2.4.3
+    container_name: es_node_2
+    volumes:
+      - ./node2/config:/usr/share/elasticsearch/config
+      - ./node2/data:/usr/share/elasticsearch/data
+    ports:
+      - 9202:9200
+      - 9302:9300
