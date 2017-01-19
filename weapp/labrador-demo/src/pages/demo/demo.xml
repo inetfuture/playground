@@ -1,0 +1,14 @@
+<view class="container">
+  <component key="title" />
+
+  <picker
+    class="picker"
+    range="{{state.options}}"
+    value="{{state.optionsIndex}}"
+    bindchange="_onChangePicker"
+  >
+    <view class="picker-view">
+      当前选择：{{state.options[state.optionsIndex]}}
+    </view>
+  </picker>
+</view>
