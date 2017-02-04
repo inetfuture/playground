@@ -12,7 +12,9 @@ export default class Demo extends Component {
       title: {
         component: Title,
         props: {
-          value: this.state.title
+          value: this.state.title,
+          a: this.state.a,
+          b: this.state.b
         }
       }
     };
@@ -20,6 +22,8 @@ export default class Demo extends Component {
 
   onLoad = () => {
     console.log('onLoad...');
+    this.setState({ a: 1, b: 2 });
+    this.setState({ showCat: true });
   }
 
   onReady = () => {
@@ -32,5 +36,13 @@ export default class Demo extends Component {
     this.setState({ optionsIndex: e.detail.value });
     console.log(this);
     this.setState({ title: this.state.options[e.detail.value] });
+  }
+
+  _onTapOptionItem = (e) => {
+    console.log('_onTapOptionItem', e);
+  }
+
+  _onTap = () => {
+    console.log('demo _onTap');
   }
 }

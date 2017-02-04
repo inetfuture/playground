@@ -1,4 +1,4 @@
-<view class="container">
+<view class="container" bindtap="_onTap">
   <component key="title" />
 
   <picker
@@ -11,4 +11,14 @@
       当前选择：{{state.options[state.optionsIndex]}}
     </view>
   </picker>
+
+  <text>{{state.a + state.b}}</text>
+
+  <view wx:if="{{state.showCat}}">
+    <text>Cat</text>
+  </view>
+
+  <view wx:for="{{state.options}}">
+    <text bindtap="_onTapOptionItem">{{index}}: {{item}}</text>
+  </view>
 </view>
