@@ -1,0 +1,11 @@
+version: '2'
+services:
+  lb:
+    image: rancher/lb-service-haproxy:v0.5.9
+    ports:
+    - 8085:8085
+
+  clock:
+    image: docker.quncrm.com/tests/clock:latest
+    labels:
+      io.rancher.container.pull_image: always

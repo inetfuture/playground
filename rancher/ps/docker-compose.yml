@@ -1,0 +1,17 @@
+version: '2'
+services:
+  php-lb:
+    image: rancher/lb-service-haproxy:v0.5.9
+    ports:
+    - 8083:8083
+
+  php-nginx:
+    image: docker.quncrm.com/tests/php-nginx
+    labels:
+      io.rancher.sidekicks: php-server
+      io.rancher.container.pull_image: always
+
+  php-server:
+    image: docker.quncrm.com/tests/php-server
+    labels:
+      io.rancher.container.pull_image: always

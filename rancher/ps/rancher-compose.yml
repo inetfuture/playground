@@ -1,0 +1,29 @@
+version: '2'
+services:
+  php-lb:
+    scale: 2
+    start_on_create: true
+    lb_config:
+      port_rules:
+      - protocal: 'http'
+        service: php-nginx
+        source_port: 8083
+        target_port: 80
+    health_check:
+      port: 42
+      interval: 2000
+      response_timeout: 2000
+      healthy_threshold: 2
+      unhealthy_threshold: 3
+
+  php-nginx:
+    scale: 2
+    start_on_create: true
+    # upgrade_strategy:
+    #   start_first: true
+    health_check:
+      port: 80
+      interval: 2000
+      response_timeout: 2000
+      healthy_threshold: 2
+      unhealthy_threshold: 3

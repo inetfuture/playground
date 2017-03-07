@@ -1,0 +1,27 @@
+version: '2'
+services:
+  lb:
+    scale: 1
+    start_on_create: true
+    lb_config:
+      port_rules:
+      - protocal: 'http'
+        service: clock
+        source_port: 8085
+        target_port: 80
+    health_check:
+      port: 42
+      interval: 2000
+      response_timeout: 2000
+      healthy_threshold: 2
+      unhealthy_threshold: 3
+
+  clock:
+    scale: 2
+    start_on_create: true
+    health_check:
+      port: 80
+      interval: 2000
+      response_timeout: 2000
+      healthy_threshold: 2
+      unhealthy_threshold: 3

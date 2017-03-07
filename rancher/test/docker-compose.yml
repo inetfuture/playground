@@ -1,0 +1,17 @@
+version: '2'
+services:
+  nginx-demo-lb:
+    image: rancher/lb-service-haproxy:v0.5.9
+    ports:
+    - 8082:8082/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
+
+  nginx-demo:
+    image: dontrebootme/nginx-demo
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+
