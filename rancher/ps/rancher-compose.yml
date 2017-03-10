@@ -4,6 +4,12 @@ services:
     scale: 2
     start_on_create: true
     lb_config:
+      config: |-
+        listen stats
+          bind *:9000
+          mode http
+          stats enable
+          stats uri /
       port_rules:
       - protocal: 'http'
         service: php-nginx

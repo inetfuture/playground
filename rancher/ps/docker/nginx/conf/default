@@ -4,7 +4,10 @@ server {
     index index.html index.htm index.php;
 
     access_log /var/log/nginx/php.server-access.log;
-    error_log  /var/log/nginx/php.server-error.log;
+    error_log  /var/log/nginx/php.server-error.log debug;
+
+    resolver 169.254.169.250 valid=1s;
+    set $server php-server;
 
     location / {
         try_files $uri $uri/ /index.php?$args;
@@ -13,7 +16,7 @@ server {
     location ~ .*\.(php|php5)?$ {
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_pass   php-server:9000;
+        fastcgi_pass  $server:9000;
     }
 
     location ~ /\.(ht|svn|git) {
