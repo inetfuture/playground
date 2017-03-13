@@ -10,7 +10,7 @@ echo 'started trap sig!!!!!!!!!!!!!!!!!!!!!!!!'
 # 14    SIGALRM
 # 15    SIGTERM
 for sig in 1 2 3 6 9 14 15; do
-    trap 'echo "caught signal '$sig'................................"' $sig
+    trap 'echo "caught signal '$sig'................................"; exit 0' $sig
 done
 
 while [[ true ]]; do

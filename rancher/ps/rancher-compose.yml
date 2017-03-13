@@ -23,13 +23,14 @@ services:
       unhealthy_threshold: 3
 
   php-nginx:
-    scale: 2
+    scale: 1
     start_on_create: true
     # upgrade_strategy:
     #   start_first: true
     health_check:
       port: 80
-      interval: 2000
+      interval: 10
       response_timeout: 2000
-      healthy_threshold: 2
-      unhealthy_threshold: 3
+      healthy_threshold: 1
+      unhealthy_threshold: 2
+      strategy: none

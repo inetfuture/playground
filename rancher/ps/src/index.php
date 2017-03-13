@@ -10,7 +10,7 @@
       $sec = (int) substr($uriEnd, 6);
     }
     slow($sec);
-  } else { 
+  } else {
     echo "<p>Welcome to PHP</p>";
   }
 
@@ -19,7 +19,15 @@
   }
 
   function slow($sec) {
-    sleep($sec);
+    busy($sec);
     echo "<p>slow $sec s</p>";
+  }
+
+  function busy($sec) {
+    $deadline = time() + $sec;
+    $now = time();
+    while ($now < $deadline) {
+      $now = time();
+    }
   }
 ?>

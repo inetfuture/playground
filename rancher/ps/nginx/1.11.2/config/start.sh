@@ -1,16 +1,13 @@
 #!/usr/bin/env bash
 
 shutdown() {
-  echo 'gracefully shutting down nginx...'
+  echo 'gracefully shutting down...'
   kill -s QUIT ${pid}
-  while [[ true ]]; do
-    date
-    ps -ef | grep master | grep -v grep
-    sleep 1
-  done
+  wait ${pid}
+  exit $?
 }
 
-trap shutdown SIGINT SIGHUP SIGQUIT SIGTERM
+trap shutdown EXIT
 
 /usr/sbin/nginx &
 

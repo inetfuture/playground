@@ -1,3 +1,3 @@
-FROM docker.quncrm.com/base/phpfpm:7.1
+FROM docker.quncrm.com/tests/phpfpm:7.1
 
 COPY src /srv/php-server

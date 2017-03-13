@@ -17,7 +17,7 @@ COPY config/fastcgi_params /etc/nginx/fastcgi_params
 COPY config/basic.conf /etc/nginx/basic.conf
 COPY config/h5bp /etc/nginx/h5bp
 COPY config/start.sh /etc/service/nginx/run
-COPY config/trapSig.sh /etc/service/trapSig/run
+# COPY config/trapSig.sh /etc/service/trapSig/run
 
 RUN chmod +x /etc/service/nginx/run /etc/init.d/nginx \
     && rm -rf /tmp/* \
