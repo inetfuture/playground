@@ -1,0 +1,15 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callbacks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-latest": "6.24.0",
+    "mongodb": "2.2.25"
+  }
+}
