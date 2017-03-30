@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-preset-latest": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-preset-env": "1.2.2",
+    "babel-watch": "2.0.6",
     "mongodb": "2.2.25"
   }
 }
