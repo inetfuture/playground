@@ -1,5 +1,4 @@
-FROM docker.quncrm.com/base/ubuntu:14.04
-MAINTAINER Jerome Ge <jeromege@augmentum.com.cn>
+FROM inetfuture.com/base/ubuntu:14.04
 
 ENV OPENRESTY_VERSION 1.11.2.1
 ADD config/openresty_${OPENRESTY_VERSION}-1_amd64.deb /tmp/openresty_${OPENRESTY_VERSION}.deb
