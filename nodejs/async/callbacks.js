@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb';
 MongoClient.connect('mongodb://localhost/test', (err, db) => {
   console.log('connect', err, db.databaseName);
 
-  db.collection('groups').findOne({ name: 'baomi' }, (err, group) => {
+  db.collection('groups').findOne({ name: 'engineer' }, (err, group) => {
     console.log('groups findOne', err, group);
 
     db.collection('projects').find({ groupId: group._id }).toArray((err, projects) => {

@@ -6,7 +6,7 @@ MongoClient.connect('mongodb://localhost/test')
   db = _db;
   console.log('connect', db.databaseName);
 
-  return db.collection('groups').findOne({ name: 'baomi' });
+  return db.collection('groups').findOne({ name: 'engineer' });
 })
 .then((group) => {
   console.log('groups findOne', group);

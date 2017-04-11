@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb';
 async function run() {
   try {
     const db = await MongoClient.connect('mongodb://localhost/test');
-    const group = await db.collection('groups').findOne({ name: 'baomi' });
+    const group = await db.collection('groups').findOne({ name: 'engineer' });
     const projects = await db.collection('projects').find({ groupId: group._id }).toArray();
     const projectIds = projects.map((p) => p._id);
     const users = await db.collection('users').find({ projectId: { $in: projectIds } }).toArray();
