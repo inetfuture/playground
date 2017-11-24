@@ -1,0 +1,8 @@
+{
+  "log.Println": {
+    "prefix": "l",
+    "body": [
+      "log.Println($1)"
+    ]
+  }
+}
