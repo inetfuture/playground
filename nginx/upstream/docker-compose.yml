@@ -1,0 +1,17 @@
+version: '2.0'
+services:
+  dnsmasq:
+    image: andyshinn/dnsmasq:2.76
+    volumes:
+    - ./hosts:/etc/hosts
+    cap_add:
+    - NET_ADMIN
+
+  nginx:
+    image: nginx
+    volumes:
+    - ./conf.d:/etc/nginx/conf.d
+    ports:
+    - 8000:8000
+    depends_on:
+    - dnsmasq
