@@ -1,0 +1,26 @@
+- name: get current kernel version
+  shell: currentKernelVersion=$(uname -r) && echo ${currentKernelVersion//-generic/}
+  args:
+    executable: /bin/bash
+  register: current_kernel_version
+
+- name: compare kernel version
+  shell: |
+    if [[ {{ minKernelVersion }} = {{ current_kernel_version.stdout }} ]]; then
+      echo "false"
+      exit 0
+    fi
+    olderVersion=$(echo -e "{{ minKernelVersion }}\n{{ current_kernel_version.stdout }}" | sort -V | head -n1)
+    if [[ ${olderVersion} = {{ current_kernel_version.stdout }} ]]; then
+      echo "true"
+    else
+      echo "false"
+    fi
+  args:
+    executable: /bin/bash
+  register: is_current_kernel_version_older_than_specified_version
+
+- import_tasks: tag1.yml
+  tags:
+  - tag1
+  when: is_current_kernel_version_older_than_specified_version.stdout == "true"

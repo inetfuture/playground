@@ -1,0 +1,7 @@
+all:
+  children:
+    common:
+      hosts:
+        ubuntu:
+          minKernelVersion: '5.4.0-72'
+
